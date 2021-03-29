@@ -1,0 +1,128 @@
+{
+  "distributions": [
+    {
+      "firstname": "ლევანი",
+      "lastname": "გოხელაშვილი",
+      "gender": "მამრობითი",
+      "birthdate": "1995-12-30",
+      "imageUrl": "",
+      "passportType": "პირადობის მოწმობა",
+      "documentSeries": "",
+      "passportNumber": "",
+      "releaseDate": "2013-03-20",
+      "validDate": "2021-03-21",
+      "persNumber": "",
+      "issuedBy": "იუსტიციის სამინისტრო",
+      "contactType": "ტელეფონი",
+      "contactInfo": "555555555",
+      "addressType": "ფაქტიური მისამართი",
+      "address": "გლდანი",
+      "parentId": "",
+      "id": 1,
+      "recommendedDistributors": [
+        7,
+        3,
+        6
+      ]
+    },
+    {
+      "firstname": "თემური",
+      "lastname": "ფხალაძე",
+      "gender": "",
+      "birthdate": "",
+      "imageUrl": "",
+      "passportType": "",
+      "documentSeries": "",
+      "passportNumber": "",
+      "releaseDate": "",
+      "validDate": "",
+      "persNumber": "",
+      "issuedBy": "",
+      "contactType": "",
+      "contactInfo": "",
+      "addressType": "",
+      "address": "",
+      "parentId": 1,
+      "id": 3,
+      "recommendedDistributors": [
+        8,
+        9,
+        6
+      ]
+    },
+    {
+      "firstname": "ნიკა",
+      "lastname": "მასურაშვილი",
+      "gender": "მამრობითი",
+      "birthdate": "1988-10-13",
+      "imageUrl": "",
+      "passportType": "პირადობის მოწმობა",
+      "documentSeries": "",
+      "passportNumber": "",
+      "releaseDate": "2015-02-28",
+      "validDate": "2021-04-10",
+      "persNumber": "",
+      "issuedBy": "იუსტიციის სამინისტრო",
+      "contactType": "ტელეფონი",
+      "contactInfo": "555555555",
+      "addressType": "ფაქტიური მისამართი",
+      "address": "ჭავჭავაძის 28",
+      "parentId": 3,
+      "id": 6
+    },
+    {
+      "firstname": "ირაკლი",
+      "lastname": "კონჯარია",
+      "gender": "",
+      "birthdate": "",
+      "imageUrl": "",
+      "passportType": "",
+      "documentSeries": "",
+      "passportNumber": "",
+      "releaseDate": "",
+      "validDate": "",
+      "persNumber": "",
+      "issuedBy": "",
+      "contactType": "",
+      "contactInfo": "",
+      "addressType": "",
+      "address": "",
+      "parentId": 3,
+      "id": 8
+    },
+    {
+      "firstname": "ბექა ",
+      "lastname": "თინიკაშვილი",
+      "gender": "",
+      "birthdate": "",
+      "imageUrl": "",
+      "passportType": "",
+      "documentSeries": "",
+      "passportNumber": "",
+      "releaseDate": "",
+      "validDate": "",
+      "persNumber": "",
+      "issuedBy": "",
+      "contactType": "",
+      "contactInfo": "",
+      "addressType": "",
+      "address": "",
+      "parentId": 3,
+      "id": 9
+    }
+  ],
+  "products": [
+    {
+      "productCode": "123",
+      "productName": "123",
+      "productPrice": 123,
+      "id": "sOkA9o1"
+    },
+    {
+      "productCode": "419816165",
+      "productName": "Sprite",
+      "productPrice": 1.2,
+      "id": "buyCxC0"
+    }
+  ]
+}

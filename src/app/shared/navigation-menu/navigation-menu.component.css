@@ -1,0 +1,15 @@
+.side-nav{
+    cursor: pointer;
+    /* text-align: center; */
+    padding: 10px;
+    
+}
+.side-nav:hover{
+    background-color: lightgray;
+    transition: 1s;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }

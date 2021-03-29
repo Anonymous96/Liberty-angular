@@ -1,0 +1,28 @@
+<form>
+    <div class="row mb-4">
+        <div class="col">
+            <div class="form-outline mb-4">
+                <label class="form-label" for="form6Example3">დისტრიბუცია</label>
+                <select [(ngModel)]="parentId" name="test" class="form-control form-style" [ngModelOptions]="{standalone: true}">
+                    <option value="">არჩევა..</option>
+                    <option *ngFor="let distributor of distributors" value="distributor.id" >{{distributor.firstname}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-outline mb-4">
+                <label class="form-label" for="form6Example3">დაბადების თარიღი</label>
+                <input type="date" name="dateofbirth" id="dateofbirth" class="form-control" formControlName="birthdate" />
+            </div>
+    </div>
+        </div>
+            <div class="form-outline mb-4">
+                <label class="form-label" for="form6Example3">პროდუქცია</label>
+                <select  name="test" class="form-control form-style" formControlName="">
+                    <option value="">არჩევა..</option>
+                    <option *ngFor="let product of products" [ngValue]="product.id" label="{{product?.productName}}">{{product?.productName}}</option>
+                </select>
+            </div>
+            <!-- <app-selected-product [selectedProducts]="products"></app-selected-product>   -->
+    <button type="submit" class="btn btn-primary" style="float: right;">Submit</button>
+</form>

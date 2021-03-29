@@ -1,0 +1,16 @@
+.action-button {
+    cursor: pointer;
+    float: left;
+    width: 35px;
+}
+.action-button-edit {
+    cursor: pointer;
+    float: left;
+}
+.disabled {
+    opacity: 0.5;
+}
+
+.datatable-body-cell-label {
+    width: 46px;
+}
