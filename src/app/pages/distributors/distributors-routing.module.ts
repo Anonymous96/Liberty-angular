@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core'
 import { Routes, RouterModule } from '@angular/router'
-import { DistributorAddComponent } from './distributors/distributor-add/distributor-add.component'
+import { DistributorAddEditComponent } from './distributors/distributor-add-edit/distributor-add-edit.component'
 import { DistributorsComponent } from './distributors/distributors.component'
 
 const routes: Routes = [
@@ -10,11 +10,11 @@ const routes: Routes = [
     },
     {
         path: 'add-distributor',
-        component: DistributorAddComponent,
+        component: DistributorAddEditComponent,
     },
     {
         path: 'edit-distributor/:id',
-        component: DistributorAddComponent,
+        component: DistributorAddEditComponent,
     },
 ]
 

@@ -1,10 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core'
 import { ColumnMode } from '@swimlane/ngx-datatable'
-import { SimpleModalService } from 'ngx-simple-modal'
 import { ToastrService } from 'ngx-toastr'
 import { distributor } from 'src/app/models/distributor.model'
 import { DistributorService } from 'src/app/services/distributor.service'
-import { DistributorAddComponent } from './distributor-add/distributor-add.component'
 
 type DistributorForTree = distributor & { treeStatus: string }
 
@@ -39,7 +37,7 @@ export class DistributorsComponent implements OnInit {
                 console.log(data)
             },
             (err) => console.log(err),
-            () => this.findChildren()
+            () => console.log('sucess')
         )
     }
 
@@ -51,33 +49,6 @@ export class DistributorsComponent implements OnInit {
                 this.toastr.success('დისტრიბუტორი წარმატებით წაიშალა')
                 this.distributors.splice(index, 1)
             })
-    }
-    public testArray = []
-    findChildren() {
-        // const result = this.distributors.find(
-        //     (distributor) => distributor.id === distributor.parentId
-        // )
-        // this.testArray.push(result)
-        this.findByParentId(this.distributors, 1)
-        // console.log(
-        //     this.distributors.map((distributor) => ({
-        //         id: distributor.id,
-        //         firstName: distributor.firstname,
-        //         parentId: distributor.parentId,
-        //     }))
-        // )
-        for (let distributor of this.testArray) {
-        }
-    }
-
-    findByParentId(distributors: DistributorForTree[], id: number) {
-        const children = []
-        for (let distributor of distributors) {
-            if (id === distributor.parentId) {
-                children.push(distributor)
-            }
-        }
-        return children
     }
 
     onTreeAction(event: any) {
