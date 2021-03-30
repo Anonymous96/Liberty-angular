@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core'
 import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { environment } from 'src/environments/environment'
 import { Observable } from 'rxjs'
-import { distributor } from '../models/distributor.model'
+import { Distributor } from '../models/Distributor.model'
 
 const httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
@@ -15,26 +15,26 @@ const httpOptions = {
 export class DistributorService {
     constructor(private http: HttpClient) {}
 
-    public getDistributors(): Observable<Array<distributor>> {
-        return <Observable<Array<distributor>>>(
+    public getDistributors(): Observable<Array<Distributor>> {
+        return <Observable<Array<Distributor>>>(
             this.http.get(environment.apiUrl + '/distributions')
         )
     }
 
-    public getDistributorById(id: number): Observable<distributor> {
-        return <Observable<distributor>>(
+    public getDistributorById(id: number): Observable<Distributor> {
+        return <Observable<Distributor>>(
             this.http.get(environment.apiUrl + '/distributions/' + id)
         )
     }
 
-    public insertDistributor(distributor: distributor): Observable<any> {
+    public insertDistributor(distributor: Distributor): Observable<any> {
         return this.http.post(
             environment.apiUrl + '/distributions',
             distributor
         )
     }
 
-    public insertrecommendedDistributors(distributor: distributor) {
+    public insertrecommendedDistributors(distributor: Distributor) {
         return this.http.post(
             environment.apiUrl + '/distributions/' + distributor.parentId,
             distributor.id
@@ -57,7 +57,7 @@ export class DistributorService {
         return this.editDistributor(parent.id, parent)
     }
 
-    public editDistributor(id: number, distributor: distributor) {
+    public editDistributor(id: number, distributor: Distributor) {
         return this.http.put(
             environment.apiUrl + '/distributions/' + id,
             distributor

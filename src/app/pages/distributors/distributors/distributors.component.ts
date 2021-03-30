@@ -1,10 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core'
 import { ColumnMode } from '@swimlane/ngx-datatable'
 import { ToastrService } from 'ngx-toastr'
-import { distributor } from 'src/app/models/distributor.model'
+import { Distributor } from 'src/app/models/Distributor.model'
 import { DistributorService } from 'src/app/services/distributor.service'
 
-type DistributorForTree = distributor & { treeStatus: string }
+type DistributorForTree = Distributor & { treeStatus: string }
 
 @Component({
     selector: 'app-distributors',

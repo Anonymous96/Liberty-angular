@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core'
 import { FormControl, FormGroup, Validators } from '@angular/forms'
 import { ActivatedRoute, Router } from '@angular/router'
 import { throwError } from 'rxjs'
-import { distributor } from 'src/app/models/distributor.model'
+import { Distributor } from 'src/app/models/Distributor.model'
 import { DistributorService } from 'src/app/services/distributor.service'
 import { ToastrService } from 'ngx-toastr'
 
@@ -13,9 +13,9 @@ import { ToastrService } from 'ngx-toastr'
 })
 export class DistributorAddEditComponent implements OnInit {
     parentId: number
-    distributors: distributor[]
+    distributors: Distributor[]
     distributorForm: FormGroup
-    public distributor: distributor
+    public distributor: Distributor
     public recommendedDistributors = []
     public children = []
     public distributorId: number = this.route.snapshot.params.id
@@ -97,10 +97,7 @@ export class DistributorAddEditComponent implements OnInit {
                     (data) => {
                         this.distributors.push(data)
                         this.addParent(data)
-                        setTimeout(() => {
-                            //<<<---using ()=> syntax
-                            this.navigateToDistributor()
-                        }, 3000)
+                        this.navigateToDistributor()
 
                         return true
                     },

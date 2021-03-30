@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core'
-import { distributor } from 'src/app/models/distributor.model'
+import { Distributor } from 'src/app/models/Distributor.model'
 import { Product } from 'src/app/models/Product.model'
 import { DistributorService } from 'src/app/services/distributor.service'
 import { ProductService } from 'src/app/services/product.service'
@@ -10,7 +10,7 @@ import { ProductService } from 'src/app/services/product.service'
     styleUrls: ['./sale-add.component.css'],
 })
 export class SaleAddComponent implements OnInit {
-    distributors: distributor[]
+    distributors: Distributor[]
     products: Product[]
     parentId: number
     productId: number

@@ -1,4 +1,4 @@
-export class distributor {
+export class Distributor {
     id?: number
     firstname?: string
     lastname?: string
@@ -17,6 +17,6 @@ export class distributor {
     addressType?: string
     address?: string
     parentId?: number
-    recommendedDistributors?: distributor[]
+    recommendedDistributors?: Distributor[]
     treeStatus?: string
 }
